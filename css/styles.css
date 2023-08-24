@@ -41,3 +41,22 @@ body {
   
   /* Adicione mais estilos conforme necessário para o seu conteúdo */
   
+  /* Estilo para a barra de navegação transparente */
+.navbar.transparent {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+}
+
+/* Estilo para a barra de navegação opaca */
+.navbar.opaque {
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Pode ajustar o valor do alfa aqui */
+  transition: background-color 0.5s ease;
+}
+
+/* Estilo para a imagem de capa */
+#inicio {
+  margin-top: -56px; /* Altura da barra de navegação */
+  padding-top: 56px; /* Altura da barra de navegação */
+}
+
+
