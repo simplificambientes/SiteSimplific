@@ -1,0 +1,43 @@
+/* Estilos para o corpo do site */
+body {
+    padding-top: 70px; /* Garante espaço para a barra de navegação fixa */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para a barra de navegação */
+  .navbar {
+    background-color: #333;
+  }
+  
+  .navbar-brand img {
+    height: 50px; /* Ajuste a altura do logo conforme necessário */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  /* Estilos para as seções */
+  section {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  /* Estilos para os links de navegação */
+  .navbar-nav .nav-link {
+    padding: 8px 15px;
+  }
+  
+  /* Efeito de hover nos links de navegação */
+  .navbar-nav .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para o título das seções */
+  h2 {
+    margin-bottom: 30px;
+  }
+  
+  /* Adicione mais estilos conforme necessário para o seu conteúdo */
+  
