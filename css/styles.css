@@ -59,4 +59,16 @@ body {
   padding-top: 56px; /* Altura da barra de navegação */
 }
 
+/* Espaçamento entre os cards quando a página está mais estreita */
+@media (max-width: 768px) {
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Espaço entre a imagem e o topo do card */
+.card .mt-3 {
+  margin-top: 1rem;
+}
+
 
