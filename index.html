@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site</title>
+
+  <style>
+    /* Adicione estilos para as cores das sessões */
+    .sessao-color-1 {
+      background-color: #e7e3e0; /* Cor pastel 1 */
+    }
+    .sessao-color-2 {
+      background-color: #c9d9f0; /* Cor pastel 2 */
+    }
+  </style>
+
+  <title>Simplific - áudio e vídeo</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon"> <!-- Link para o ícone -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,7 +24,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top transparent">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="images/logo.png" alt="Logo">
+      <img src="images/logo.png" alt="Logo" style="height: 80px;">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,26 +53,40 @@
 
 <section id="inicio" class="py-5 d-flex align-items-center" style="background-image: url('images/capa1.png'); background-size: cover; background-position: center; height: 80vh;">
   <div class="container text-center text-white">
-    <h1 class="display-4">Bem-vindo ao Nosso Site</h1>
-    <p class="lead">Seu slogan ou mensagem de boas-vindas aqui.</p>
+    <h1 class="display-4">Simplific áudio e vídeo</h1>
+    <p class="lead">Sua parceira confiável na jornada de tornar casas em lares inteligentes e conectados. </p>
   </div>
 </section>
 
-<section id="sobre" class="py-5">
+<section id="sobre" class="py-5 sessao-color-1">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h2>Sobre Nós</h2>
-        <p>Texto sobre a empresa e sua história.</p>
+        <h2 class="mb-4">Sobre Nós</h2>
+        <div class="sobre-texto">
+          <h4 class="h5 font-weight-bold text-dark mb-3">Transformando Residências em Lares Inteligentes</h4>
+          <p>Temos orgulho de ser uma referência em projetos de áudio, vídeo e automação residencial em Goiânia e em todo o interior do Estado de Goiás. Desde o momento da nossa fundação, nosso compromisso tem sido criar ambientes que harmonizam tecnologia e conforto, dando vida a residências que se adaptam às necessidades e desejos de nossos clientes.</p>
+
+          <h4 class="h5 font-weight-bold text-dark mb-3">Mais de 20 Anos de Excelência</h4>
+          <p>Ao longo dos últimos 20 anos, temos trilhado uma jornada marcada pela busca incessante pela excelência. Cada projeto que assumimos é uma oportunidade de transformar ideias em realidade, integrando soluções de áudio, vídeo e automação que se alinham perfeitamente aos estilos de vida únicos de nossos clientes.</p>
+
+          <h4 class="h5 font-weight-bold text-dark mb-3">Simplificar a Complexidade</h4>
+          <p>Temos a missão de simplificar a complexidade tecnológica para nossos clientes. Sabemos que a tecnologia pode ser impressionante, mas também pode ser intimidante. É por isso que nos dedicamos a tornar a experiência de automação residencial acessível e tranquila. Nossa equipe altamente qualificada está sempre pronta para entender suas necessidades, traduzir suas aspirações em soluções práticas e guiar você em cada etapa do processo.</p>
+        </div>
       </div>
       <div class="col-md-6">
-        <img src="images/quemsomos1.jpg" alt="Sobre Nós" style="width: 80vh; height: 80vh; object-fit: cover;">
+        <img src="images/quemsomos1.jpg" alt="Sobre Nós" class="img-fluid" style="object-fit: cover;">
+        <div class="mt-md-5">
+          <p class="mb-0">Somos representantes da Iluflex no Estado de Goiás</p>
+          <img src="images/logo iluflex.png" alt="Logo da Iluflex" class="img-fluid" style="max-width: 100px;">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="servicos" class="py-5">
+
+<section id="servicos" class="py-5 sessao-color-2">
   <div class="container">
     <h2 class="text-center">Nossos Serviços</h2>
     <div class="row">
@@ -71,7 +97,7 @@
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">ÁUDIO</h5>
-            <p class="card-text">Descrição do serviço de áudio.</p>
+            <p class="card-text">Apresentamos nosso sistema de som ambiente de destaque, uma combinação perfeita entre receivers de alto desempenho e alto-falantes de alta fidelidade. Nossa abordagem cuidadosa garante uma experiência sonora imersiva, enquanto os alto-falantes embutidos e discretos preservam a estética do ambiente. Aprecie um som puro e envolvente sem comprometer o visual. Experimente um novo patamar de áudio ambiente com nossa solução de ponta.</p>
           </div>
         </div>
       </div>
@@ -82,7 +108,7 @@
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">VÍDEO</h5>
-            <p class="card-text">Descrição do serviço de vídeo.</p>
+            <p class="card-text">Nossas telas de cinema em casa, com desenho elegante, podem ser recolhidas automaticamente quando não estão em uso. Complementando essa estética, nossos projetores de alta definição de imagem são discretamente embutidos no teto, garantindo um ambiente refinado. Viva a magia do cinema sem sair de casa, com tecnologia que combina funcionalidade e elegância.</p>
           </div>
         </div>
       </div>
@@ -93,7 +119,7 @@
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">AUTOMAÇÃO RESIDENCIAL</h5>
-            <p class="card-text">Descrição do serviço de automação residencial.</p>
+            <p class="card-text">Imagine ter toda a sua casa sob controle, acessível na palma da sua mão através do seu celular. Com a nossa tecnologia de automação residencial, você pode integrar a iluminação, o ar condicionado, a cortina e todos os dispositivos de áudio e vídeo da sua casa. Ajuste o ambiente conforme suas preferências com facilidade e praticidade, criando a atmosfera perfeita para cada momento.</p>
           </div>
         </div>
       </div>
@@ -101,7 +127,7 @@
   </div>
 </section>
 
-<section id="depoimentos" class="py-5">
+<section id="depoimentos" class="py-5 sessao-color-1">
   <div class="container">
     <h2>Depoimentos</h2>
     <div id="depoimentos-carousel" class="carousel slide" data-ride="carousel">
@@ -116,19 +142,19 @@
         </div>
         <!-- Adicione mais itens de depoimento conforme necessário -->
       </div>
-      <a class="carousel-control-prev" href="#depoimentos-carousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev custom-carousel-control" href="#depoimentos-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
       </a>
-      <a class="carousel-control-next" href="#depoimentos-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <a class="carousel-control-next custom-carousel-control" href="#depoimentos-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon custom-carousel-control" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
-      </a>
+      </a>      
     </div>
   </div>
 </section>
 
-<section id="contato" class="py-5">
+<section id="contato" class="py-5 sessao-color-2">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -157,6 +183,32 @@
     </div>
   </div>
 </section>
+
+<footer class="bg-white text-dark text-center py-3">
+  <div class="container">
+    <ul class="nav justify-content-center" style="font-size: 12px;">
+      <li class="nav-item">
+        <a class="nav-link" href="#inicio">Início</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sobre">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#servicos">Serviços</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contato">Contato</a>
+      </li>
+    </ul>
+    <p style="font-size: 14px;">Direitos autorais © 2023 Todos os direitos reservados - Simplific</p>
+    <p style="font-size: 14px;">CNPJ: SEU CNPJ AQUI</p>
+  </div>
+</footer>
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>

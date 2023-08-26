@@ -71,4 +71,11 @@ body {
   margin-top: 1rem;
 }
 
+/* Estilo personalizado para os botões de seta */
+.custom-carousel-control {
+  color: #333; /* Cor mais escura desejada */
+}
 
+.logo-img {
+  height: 80px; /* Ajuste o valor da altura conforme necessário */
+}
