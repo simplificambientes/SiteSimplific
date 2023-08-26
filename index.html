@@ -17,6 +17,8 @@
   <title>Simplific - áudio e vídeo</title>
   <link rel="icon" href="favicon.png" type="image/x-icon"> <!-- Link para o ícone -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -159,26 +161,30 @@
     <div class="row">
       <div class="col-md-6">
         <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações.</p>
-        <p>Endereço: Rua ABC, 123<br>Telefone: (123) 456-7890<br>Email: exemplo@email.com</p>
+        <p>Entre em contato conosco para mais informações</p>
+        <p>Rua Itapeva, 3 - St. Central, Senador Canedo - GO, Brasil
+          <br>CEP 75251-391<br> 📱 +55 (62) 98405-7564<br>📧 Email: edicarlos.mail@gmail.com</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/simplificaudioevideo/" target="_blank" class="mr-3">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/simplificambientes" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
       </div>
       <div class="col-md-6">
         <h2>Fale Conosco</h2>
-        <form action="mailto:edicarlos.mail@gmail.com" method="post" enctype="text/plain">
+        <form action="https://formspree.io/f/xqkvqwll" method="POST">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Nome" name="nome" required>
+            <input type="email" class="form-control" name="email" placeholder="E-mail" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" placeholder="Telefone" name="telefone" required>
+            <textarea class="form-control" name="message" rows="4" placeholder="Mensagem" required></textarea>
           </div>
-          <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email" name="email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" placeholder="Mensagem" name="mensagem" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Fale Conosco</button>
-        </form>
+          <!-- Seus outros campos do formulário aqui -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>        
       </div>
     </div>
   </div>

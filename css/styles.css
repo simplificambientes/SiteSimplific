@@ -79,3 +79,12 @@ body {
 .logo-img {
   height: 80px; /* Ajuste o valor da altura conforme necessário */
 }
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+}
