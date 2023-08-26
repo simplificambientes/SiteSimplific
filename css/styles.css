@@ -39,8 +39,6 @@ body {
     margin-bottom: 30px;
   }
   
-  /* Adicione mais estilos conforme necessário para o seu conteúdo */
-  
   /* Estilo para a barra de navegação transparente */
 .navbar.transparent {
   background-color: transparent !important;
@@ -161,3 +159,35 @@ body {
   color: #666;
 }
 
+/* Estilo para os cards de Nossos Serviços */
+.servico-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 30px;
+  transition: transform 0.3s;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servico-icon {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.servico-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.servico-descricao {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
