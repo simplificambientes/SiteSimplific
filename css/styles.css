@@ -1,193 +1,205 @@
 /* Estilos para o corpo do site */
 body {
-    padding-top: 70px; /* Garante espaço para a barra de navegação fixa */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Estilos para a barra de navegação */
-  .navbar {
-    background-color: #333;
-  }
-  
-  .navbar-brand img {
-    height: 50px; /* Ajuste a altura do logo conforme necessário */
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-  }
-  
-  /* Estilos para as seções */
-  section {
-    padding: 100px 0;
-    text-align: center;
-  }
-  
-  /* Estilos para os links de navegação */
-  .navbar-nav .nav-link {
-    padding: 8px 15px;
-  }
-  
-  /* Efeito de hover nos links de navegação */
-  .navbar-nav .nav-link:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  
-  /* Estilo para o título das seções */
-  h2 {
-    margin-bottom: 30px;
-  }
-  
-  /* Estilo para a barra de navegação transparente */
+  padding-top: 70px; /* Garante espaço para a barra de navegação fixa */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand img {
+  height: 50px; /* Ajuste a altura do logo conforme necessário */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Estilos para as seções */
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Estilos para os links de navegação */
+.navbar-nav .nav-link {
+  padding: 8px 15px;
+}
+
+/* Efeito de hover nos links de navegação */
+.navbar-nav .nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Estilo para o título das seções */
+h2 {
+  margin-bottom: 30px;
+}
+
+/* Estilo para a barra de navegação transparente */
 .navbar.transparent {
-  background-color: transparent !important;
-  transition: background-color 0.5s ease;
+background-color: transparent !important;
+transition: background-color 0.5s ease;
 }
 
 /* Estilo para a barra de navegação opaca */
 .navbar.opaque {
-  background-color: rgba(0, 0, 0, 0.7) !important; /* Pode ajustar o valor do alfa aqui */
-  transition: background-color 0.5s ease;
+background-color: rgba(0, 0, 0, 0.7) !important; /* Pode ajustar o valor do alfa aqui */
+transition: background-color 0.5s ease;
 }
 
 /* Estilo para a imagem de capa */
 #inicio {
-  margin-top: -56px; /* Altura da barra de navegação */
-  padding-top: 56px; /* Altura da barra de navegação */
+margin-top: -56px; /* Altura da barra de navegação */
+padding-top: 56px; /* Altura da barra de navegação */
 }
 
 /* Espaçamento entre os cards quando a página está mais estreita */
 @media (max-width: 768px) {
-  .mb-4 {
-    margin-bottom: 1.5rem;
-  }
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
 }
 
 /* Espaço entre a imagem e o topo do card */
 .card .mt-3 {
-  margin-top: 1rem;
+margin-top: 1rem;
 }
 
 /* Estilo personalizado para os botões de seta */
 .custom-carousel-control {
-  color: #333; /* Cor mais escura desejada */
+color: #333; /* Cor mais escura desejada */
 }
 
 .logo-img {
-  height: 80px; /* Ajuste o valor da altura conforme necessário */
+height: 80px; /* Ajuste o valor da altura conforme necessário */
 }
 
 .social-icons {
-  margin-top: 10px;
+margin-top: 10px;
 }
 
 .social-icons a {
-  color: #333;
-  font-size: 24px;
+color: #333;
+font-size: 24px;
 }
 
 #inicio .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.829); /* Cor escura com opacidade */
-  z-index: 1; /* Coloca o overlay na frente da imagem */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.829); /* Cor escura com opacidade */
+z-index: 1; /* Coloca o overlay na frente da imagem */
 }
 
 .overlay-content {
-  position: relative;
-  z-index: 2; /* Coloca o conteúdo na frente do overlay */
+position: relative;
+z-index: 2; /* Coloca o conteúdo na frente do overlay */
 }
 
 /* CSS para ajustar o vídeo e a sobreposição */
 #video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 #inicio .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.712); /* Ajuste a cor e a opacidade conforme desejado */
-  z-index: 1;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.712); /* Ajuste a cor e a opacidade conforme desejado */
+z-index: 1;
 }
 
 .overlay-content {
-  position: relative;
-  z-index: 2;
+position: relative;
+z-index: 2;
 }
 
 /* Estilo para os depoimentos */
 .depoimento-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1px; /* Ajuste o valor do gap conforme necessário */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1px; /* Ajuste o valor do gap conforme necessário */
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .depoimento-texto {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+position: relative;
 }
 
 .quote {
-  font-size: 20px;
-  font-style: italic;
-  color: #333;
-  margin-bottom: 10px;
+font-size: 20px;
+font-style: italic;
+color: #333;
+margin-bottom: 10px;
 }
 
 .cliente {
-  font-size: 16px;
-  color: #666;
+font-size: 16px;
+color: #666;
 }
 
 /* Estilo para os cards de Nossos Serviços */
 .servico-card {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  padding: 30px;
-  transition: transform 0.3s;
+background-color: #fff;
+border: 1px solid #eaeaea;
+border-radius: 10px;
+padding: 30px;
+transition: transform 0.3s;
 }
 
 .servico-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+transform: translateY(-5px);
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .servico-icon {
-  font-size: 40px;
-  color: #333;
-  margin-bottom: 20px;
+font-size: 40px;
+color: #333;
+margin-bottom: 20px;
 }
 
 .servico-titulo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
+font-size: 24px;
+font-weight: bold;
+color: #333;
+margin-bottom: 15px;
 }
 
 .servico-descricao {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
+font-size: 16px;
+color: #666;
+line-height: 1.6;
+}
+
+.carousel-image {
+height: auto; /* Defina a altura desejada aqui */
+width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+display: block;
+}
+
+.carousel-image-wrapper {
+width: auto; /* Largura ajustada automaticamente para manter a proporção */
+height: 300px; /* Altura fixa das imagens */
+overflow: hidden;
 }

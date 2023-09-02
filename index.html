@@ -19,6 +19,8 @@
   <link rel="icon" href="favicon.png" type="image/x-icon"> <!-- Link para o ícone -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -46,6 +48,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#depoimentos">Depoimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galeria">Obras</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contato">Contato</a>
@@ -151,7 +156,6 @@
   </div>
 </section>
 
-
 <section id="depoimentos" class="py-5 sessao-color-1">
   <div class="container">
     <h2>Depoimentos</h2>
@@ -236,7 +240,48 @@
   </div>
 </section>
 
-<section id="contato" class="py-5 sessao-color-2">
+<section id="galeria" class="py-4 sessao-color-2">
+  <div class="container">
+    <h2 class="text-center">Galeria de Obras</h2>
+    <div class="owl-carousel">
+      <div class="item"><img src="images/obra (1).jpg" alt="Obra 1"></div>
+      <div class="item"><img src="images/obra (2).jpg" alt="Obra 2"></div>
+      <div class="item"><img src="images/obra (3).jpg" alt="Obra 3"></div>
+      <!-- Continue até o número 31 -->
+      <div class="item"><img src="images/obra (4).jpg" alt="Obra 4"></div>
+      <div class="item"><img src="images/obra (5).jpg" alt="Obra 5"></div>
+      <div class="item"><img src="images/obra (6).jpg" alt="Obra 6"></div>
+      <div class="item"><img src="images/obra (7).jpg" alt="Obra 7"></div>
+      <div class="item"><img src="images/obra (8).jpg" alt="Obra 8"></div>
+      <div class="item"><img src="images/obra (9).jpg" alt="Obra 9"></div>
+      <div class="item"><img src="images/obra (10).jpg" alt="Obra 10"></div>
+      <div class="item"><img src="images/obra (11).jpg" alt="Obra 11"></div>
+      <div class="item"><img src="images/obra (12).jpg" alt="Obra 12"></div>
+      <div class="item"><img src="images/obra (13).jpg" alt="Obra 13"></div>
+      <div class="item"><img src="images/obra (14).jpg" alt="Obra 14"></div>
+      <div class="item"><img src="images/obra (15).jpg" alt="Obra 15"></div>
+      <div class="item"><img src="images/obra (16).jpg" alt="Obra 16"></div>
+      <div class="item"><img src="images/obra (17).jpg" alt="Obra 17"></div>
+      <div class="item"><img src="images/obra (18).jpg" alt="Obra 18"></div>
+      <div class="item"><img src="images/obra (19).jpg" alt="Obra 19"></div>
+      <div class="item"><img src="images/obra (20).jpg" alt="Obra 20"></div>
+      <div class="item"><img src="images/obra (21).jpg" alt="Obra 21"></div>
+      <div class="item"><img src="images/obra (22).jpg" alt="Obra 22"></div>
+      <div class="item"><img src="images/obra (23).jpg" alt="Obra 23"></div>
+      <div class="item"><img src="images/obra (24).jpg" alt="Obra 24"></div>
+      <div class="item"><img src="images/obra (25).jpg" alt="Obra 25"></div>
+      <div class="item"><img src="images/obra (26).jpg" alt="Obra 26"></div>
+      <div class="item"><img src="images/obra (27).jpg" alt="Obra 27"></div>
+      <div class="item"><img src="images/obra (28).jpg" alt="Obra 28"></div>
+      <div class="item"><img src="images/obra (29).jpg" alt="Obra 29"></div>
+      <div class="item"><img src="images/obra (30).jpg" alt="Obra 30"></div>
+      <div class="item"><img src="images/obra (31).jpg" alt="Obra 31"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contato" class="py-5 sessao-color-1">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -298,11 +343,11 @@
   </div>
 </footer>
 
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
 <script>
   window.addEventListener("scroll", function() {
@@ -316,6 +361,30 @@
       navbar.classList.add("transparent");
       navbar.classList.remove("opaque");
     }
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true, // Rola o carrossel infinitamente
+      margin: 10, // Espaçamento entre os itens
+      autoplay: true, // Inicia a reprodução automática
+      autoplayTimeout: 3000, // Intervalo entre os slides em milissegundos (2 segundos neste exemplo)
+      autoplayHoverPause: true, // Pausa a reprodução automática ao passar o mouse
+      autoplaySpeed: 3000, // Controle a velocidade da animação (valor maior = mais suave)
+      responsive:{
+        0:{
+          items:1 // Número de itens visíveis em telas menores
+        },
+        600:{
+          items:3 // Número de itens visíveis em telas médias
+        },
+        1000:{
+          items:5 // Número de itens visíveis em telas maiores
+        }
+      }
+    });
   });
 </script>
 
