@@ -13,6 +13,7 @@ body {
   height: 50px; /* Ajuste a altura do logo conforme necessário */
 }
 
+/*cor da fonte dos links na barra de navegação*/
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
