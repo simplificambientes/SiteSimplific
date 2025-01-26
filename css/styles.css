@@ -204,3 +204,29 @@ width: auto; /* Largura ajustada automaticamente para manter a proporção */
 height: 300px; /* Altura fixa das imagens */
 overflow: hidden;
 }
+
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Ajuste o tamanho do botão */
+  height: 60px; /* Tamanho igual para largura e altura */
+  background-color: #25d366; /* Cor padrão do WhatsApp */
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-fixo img {
+  width: 30px; /* Tamanho do ícone */
+  height: 30px;
+}
+
+.whatsapp-fixo:hover {
+  transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Intensifica a sombra */
+}
